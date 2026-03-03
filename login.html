@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Login de usuário</h1>
     <label for="">Email</label>
     <input type="text">
     <label for="">Senha</label>
     <input type="password">
-    <button>Entrar</button>
+    <button id="btn">Entrar</button>
+    <script>
+        const botao = document.getElementById("btn")
+        botao.addEventListener("click", () => {
+            alert("Login efetuado com sucesso!")
+        })
+    </script>
 </body>
+
 </html>
